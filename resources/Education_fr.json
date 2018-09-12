@@ -1,0 +1,18 @@
+{
+	"KRAYTI"  : [
+		{
+			"SMIA1": "ISVIIRT",
+			"SMIA": "Institut Supérieur",
+			"SMIA3": "VINCI",
+			"KAGHIT":  "FILIÈRE INGÉNIERIE INFORMATIQUE ET RÉSEAUX",
+			"MIN" : "2012",
+			"ILA": "2017"
+		},
+		{
+			"SMIA": "Lycée Omar Al Khayyam",
+			"KAGHIT":  "SCIENCES EXPÉRIMENTALES OPTION SCIENCES PHYSIQUES",
+			"MIN" : "2011",
+			"ILA": "2012"
+		}
+	]
+}

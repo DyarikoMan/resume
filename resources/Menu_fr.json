@@ -1,0 +1,13 @@
+{
+	"MENU" : {
+			"ABOUT" : "À propos de moi",
+			"EXP" : "Expériences", 
+			"EDUC"  : "Éducation", 
+			"SKL": "Compétences", 
+			"LANG": "Langages de programmation & Outils de développement",
+			"DESG": "Design Patterns / Architectures / Méthodologies",
+    "PROJ": "Projets",
+    "PROJ_PERS": "Projets personnels",
+			"INTR": "Centre d'intérêt"
+	}
+}

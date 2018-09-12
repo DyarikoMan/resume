@@ -1,1 +1,301 @@
-hello world
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Abderrahmane DYAR - CV</title>
+
+    <!--<link href="vendor/styles.css" rel="stylesheet">-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" ng-app="myApp" ng-controller="myCtrl" ng-cloak>
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top block-kfr" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">{{translation.RASSI.SMIA}} {{translation.RASSI.KNIA}}</span>
+                <span class="d-none d-lg-block">
+                    <div class="tswira-top-ta7t"></div>
+                    <div class="tswira-left-byed"></div>
+                    <img class="img-fluid img-profile mx-auto mb-2" ng-src="{{translation.RASSI.TSWIRA}}" alt="">
+                    <div class="tswira-top-ta7t"></div>
+
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-lg-none">
+                    <img ng-show="selectedLanguage =='ar'" ng-click="changeRTL('fr')" class="changeRTL" src="img/France.png" />
+                    <img ng-show="selectedLanguage =='fr'" ng-click="changeRTL('ar')" class="changeRTL" src="img/Morocco.png" />
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+
+                        <div class="rtl-line remove-navbar-ar">
+                            <img ng-click="changeRTL('ar')" class="changeRTL" src="img/English.png" />
+                            <img ng-click="changeRTL('ar')" class="changeRTL" src="img/Morocco.png" />
+                        </div>
+                        <a class="nav-link js-scroll-trigger" href="#about">{{translation.MENU.ABOUT}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#experience">{{translation.MENU.EXP}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#education">{{translation.MENU.EDUC}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#skills">{{translation.MENU.SKL}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#interests">{{translation.MENU.PROJ}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#awards">{{translation.MENU.INTR}}</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="zigzag-right d-none d-lg-block"></div>
+        <nav class="arabic navbar navbar-expand-lg navbar-dark bg-primary fixed-top-right block-nnkfr remove-navbar-ar" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Start</span>
+                <span class="d-none d-lg-block">
+                    <div class="tswira-top-ta7t"></div>
+                    <div class="tswira-right-byed"></div>
+                    <img class="img-fluid img-profile mx-auto mb-2" ng-src="{{translation.RASSI.TSWIRA}}" alt="">
+                    <div class="tswira-top-ta7t"></div>
+                    <!--    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" ng-src="{{translation.RASSI.TSWIRA}}" alt=""> -->
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+
+                        <div class="rtl-line rtl-line-r">
+                            <img ng-click="changeRTL('fr')" class="changeRTL" src="img/France.png" />
+                     
+                        </div>
+
+                        <a class="nav-link js-scroll-trigger" href="#about">عني</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#experience">الخبرة المهنية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#education">التعليم الأكاديمي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#skills">المهارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#interests">المشاريع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#awards">الاهتمامات</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="zigzag-left d-none d-lg-block"></div>
+    <div class="container-fluid">
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+            <div class="my-auto block">
+                <h1 class="mb-0">
+                    {{translation.RASSI.SMIA}}
+                    <span class="text-primary">{{translation.RASSI.KNIA}}</span>
+                </h1>
+                <div class="subheading mb-5">
+                    {{translation.RASSI.BLASSA}} · <span class="notArabic">{{translation.RASSI.TEL}}</span> ·
+                    <a class="notArabic" href="{{translation.RASSI.EMAIL}}">{{translation.RASSI.EMAIL}}</a>
+                </div>
+                <p class="mb-5">{{translation.RASSI.WASF}}</p>
+                <ul class="list-inline list-social-icons mb-0">
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a ng-href="{{translation.RASSI.TAWASOL.LINKEDIN}}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+            <div class="my-auto">
+                <h2 class="mb-5">{{translation.MENU.EXP}} </h2>
+
+                <div ng-repeat="KHDMA in translation.KHDMA" class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content block">
+
+                        <div class="mb-0 steyer"><h3>{{KHDMA.DAWR}}</h3>  <span class="text-primary date">{{KHDMA.MIN}} - {{KHDMA.ILA}} · {{KHDMA.MODDA == "" ? ModdaHadi + (selectedLanguage == 'fr' ?  ' Mois' : ' أشهر') : KHDMA.MODDA}}</span></div>
+                        <div ng-if="KHDMA.PFE" class="mb-0 steyer"><h3>{{KHDMA.PFE.DAWR}}</h3>  <span class="text-primary date">{{KHDMA.PFE.MIN}} - {{KHDMA.PFE.ILA}} · {{KHDMA.PFE.MODDA}}</span></div>
+                        <div class="subheading mb-3 notArabic">{{KHDMA.SMIA}}</div>
+                        <div class="subheading mb-3">{{KHDMA.SMIA2}}</div>
+                        <ul><li ng-repeat="MOHIMA in KHDMA.MAHAM" class="text-content">{{MOHIMA.WASF}} <span class="notArabic2">{{MOHIMA.WASF2}}</span> {{MOHIMA.WASF3}} <span class="notArabic2">{{MOHIMA.WASF4}}</span><a class="notArabic2" ng-if="MOHIMA.LINK" ng-href="{{MOHIMA.LINK}}">({{MOHIMA.LINK}})</a></li> </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+            <div class="my-auto">
+                <h2 class="mb-5">{{translation.MENU.EDUC}}</h2>
+
+                <div ng-repeat="KRAYA in translation.KRAYTI" class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content">
+                        <div class="steyer"><h3><span class="notArabic">{{KRAYA.SMIA1}}</span> <span ng-if="KRAYA.SMIA1">- </span>{{KRAYA.SMIA}}<span class="notArabic"> {{KRAYA.SMIA3}}</span></h3>  <span class="text-primary date notArabic2">{{KRAYA.MIN}} - {{KRAYA.ILA}}</span></div>
+                        <div class="subheading mb-3">{{KRAYA.KAGHIT}}</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+            <div class="my-auto">
+                <h2 class="mb-5">{{translation.MENU.SKL}}</h2>
+
+                <div class="subheading mb-3">{{translation.MENU.LANG}}</div>
+                <div ng-repeat="TECH in translation.TECH" class="list-inline-item tiiicknoloogiaa">
+                    <img ng-src="{{TECH.TSWIRA}}" alt="{{TECH.SMIA}}" class="tiiicknoloogiaa-tooltip tiiicknoloogiaa-img" />
+                    <span class="tiiicknoloogiaa-tooltiptext notArabic2">{{TECH.SMIA}}</span>
+                </div>
+
+                <div class="subheading mb-3">{{translation.MENU.DESG}}</div>
+                <ul class="fa-ul mb-0">
+                    <li ng-repeat="HANDASA in translation.HANDASA">
+                        <i class="fa-li fa fa-check"></i>
+                        <span class="notArabic2">{{HANDASA.WASF1}}</span><span> {{HANDASA.WASF}}</span><span class="notArabic2"> {{HANDASA.WASF2}}</span><span> {{HANDASA.WASF3}}</span><span class="notArabic2"> {{HANDASA.WASF4}}</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+            <div class="my-auto">
+                <h2 class="mb-5">{{translation.MENU.PROJ}}</h2>
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4 project-block" ng-repeat="PROJET in translation.PROJET">
+                            <a ng-href="{{PROJET.LINK_ANDROID ? PROJET.LINK_ANDROID : ''}}"><img ng-src="{{PROJET.TSWIRA}}" /></a>
+                            <span>{{PROJET.WASF}}</span><span class="notArabic2">{{PROJET.WASF2}}</span><span>{{PROJET.WASF3}}</span><span class="notArabic2"> - </span><span class="e3am notArabic2">{{PROJET.E3AM}}</span>
+                            <div>
+                                <ul class="fa-ul mb-0">
+                                    <li ng-if="PROJET.LINK_YT" class="list-inline-item">
+                                        <a target="_blank" rel="noopener noreferrer" ng-href="{{PROJET.LINK_YT}}">
+                                            <span class="fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x yt-circle"></i>
+                                                <i class="fa fa-youtube  fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li ng-if="PROJET.LINK" class="list-inline-item">
+                                        <a target="_blank" rel="noopener noreferrer" ng-href="{{PROJET.LINK}}">
+                                            <span class="fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x wb-circle"></i>
+                                                <i class="fa fa-link fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li ng-if="PROJET.LINK_ANDROID" class="list-inline-item">
+                                        <a target="_blank" rel="noopener noreferrer" ng-href="{{PROJET.LINK_ANDROID}}">
+                                            <span class="fa-stack fa-lg">
+                                                <i class="fa fa-circle fa-stack-2x and-circle"></i>
+                                                <i class="fa fa-android  fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+            <div class="my-auto">
+                <h2 class="mb-5">{{translation.MENU.INTR}}</h2>
+                <div>
+                    <div class="row">
+
+                        <div ng-repeat="HIWAYA in translation.HIWAYA" class=" col-xs-12 col-md-3 list-inline-item tiiicknoloogiaa hiwaya">
+                            <div class="coin"><img ng-src="{{HIWAYA.TSWIRA}}" alt="{{HIWAYA.SMIA}}" class="tiiicknoloogiaa-tooltip tiiicknoloogiaa-img" /></div>
+                            <span class="tiiicknoloogiaa-tooltiptext interest-tooltiptext coin-text">{{HIWAYA.SMIA}}</span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--<p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+            <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>-->
+        </section>
+    </div>
+   <!-- <script src="vendor/compressed.js"></script>-->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="vendor/angularjs/angular.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.js"></script>
+    <script src="js/App.js"></script>
+
+
+
+</body>
+
+</html>
+

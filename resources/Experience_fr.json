@@ -1,0 +1,86 @@
+{
+	"KHDMA": [
+		{
+			"SMIA" : "Algo Consulting Group",
+			"DAWR" : "Ingénieur Étude Et Développement Informatique", 
+			
+			"MAHAM" : [
+				{"WASF" : "Conception et développement d’un nouveau SI en charge des lignes TGV (architecture SOA)"},
+				{"WASF" : "Refonte complète des applications Back-Office"} ,
+				{"WASF" : "Développement et déploiement de Web Services pour le distributeur automatique des tickets de train"},
+        {
+          "WASF": "Développement d’une application client web E-Commerce TGV",
+          "LINK": "https://www.oncf-voyages.ma"
+        },
+				{"WASF" : "Développement d’une application client mobile Android TGV  en Xamarin"}
+			],
+			"MIN" : "1 Août 2017", 
+			"ILA" : "Actuel",
+			"MODDA" : "",
+			"PFE": {
+				"DAWR" : "Stage de fin d'étude", 
+				"MIN" : "1 Février 2017", 
+				"ILA" : "31 Juillet 2017",
+				"MODDA" : "6 Mois"
+			}
+		},
+		{
+			"SMIA" : "Octeria",
+			"DAWR" : "Stage en Développement Web", 
+			"MAHAM" : [
+				{"WASF" : "Conception et mise en place d'architecture SOA avec les technologies: Java EE avec Spring boot, Spring Security Oauth2, Spring Data Jpa, Oauth2, Zuul et Eureka"}
+			],
+			"MIN" : "1 Juin", 
+			"ILA" : "31 Juillet 2016" ,
+			"MODDA" : "2 Mois"
+		},
+		{
+			"SMIA" : "U Agency",
+			"DAWR" : "Stage en Développement Web/Mobile", 
+			"MAHAM" : [
+				{
+					"WASF" : "Conception et développement d'une application hybride (web/mobile) qui permet de générer des cartes de visites à partir des donnés prises par les APIs (facebook, linkedln et google+)"
+				},
+				{
+					"WASF" : " Participation à un projet de réalisation d'un site web vitrine concernant la première salle de CrossFit å Casablanca"
+				}
+			],
+			"MIN" : "1 Septembre", 
+			"ILA" : "30 Septembre 2015" ,
+			"MODDA" : "1 Mois"
+		},
+		{
+			"SMIA" : "Synchronism",
+			"DAWR" : "Stage en Développement Web", 
+			"MAHAM" : [
+				{
+					"WASF" : "Création de maquettes fonctionnelles en se basant sur les maquettes graphiques"
+				},
+				{
+					"WASF" : "Développement d'une application de gestion des routes maritimes avec PHP CodeIgniter"
+				},
+				{
+					"WASF" : "Participation à des projets de réalisation et optimisation des sites web"
+				},
+				{
+					"WASF" : "Migration d'un site web Drupal vers Wordpress"
+				}
+			],
+			"MIN" : "1 Juin", 
+			"ILA" : "15 Juillet 2014" ,
+			"MODDA" : "1 Mois et demi"
+		},
+		{
+			"SMIA" : "Le Parlement -Chambre des Conseillers-",
+			"DAWR" : "Stage d'observation", 
+			"MAHAM" : [
+				{
+					"WASF" : "Réalisation d'un site web et intervention de maintenance et de dépannage sur les réseaux informatiques"
+				}
+			],
+			"MIN" : "1 Septembre", 
+			"ILA" : "30 Septembre 2013" ,
+			"MODDA" : "1 Mois"
+		}
+	]
+}
